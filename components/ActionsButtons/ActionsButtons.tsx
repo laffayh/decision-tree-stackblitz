@@ -22,7 +22,7 @@ export function ActionsButtons({
         <span className="material-symbols-outlined text-xl align-middle mr-1">
           arrow_back
         </span>
-        Back
+        Retour
       </button>
       <button
         className="px-3 ml-5 text-red-500 border rounded-md cursor-pointer uppercase hover:bg-neutral-100"
@@ -31,7 +31,7 @@ export function ActionsButtons({
         <span className="material-symbols-outlined text-xl align-middle mr-1">
           refresh
         </span>
-        Start over
+        Recommencer
       </button>
     </div>
   );

@@ -55,18 +55,20 @@ export default function App() {
 
   return (
     <div className="container mx-auto">
-      <h1 className="text-xl my-5">{title}</h1>
-      <ActionsButtons
-        showActions={indexes.length > 0}
-        startOver={startOver}
-        goToPrevious={goToPrevious}
-      />
-      <DecisionList
-        decisions={currentDecisions}
-        onDecisionClicked={(decision: any, index: number) =>
-          goToNext(decision, index)
-        }
-      />
+      <div className="mx-5">
+        <h1 className="text-xl my-5">{title}</h1>
+        <ActionsButtons
+          showActions={indexes.length > 0}
+          startOver={startOver}
+          goToPrevious={goToPrevious}
+        />
+        <DecisionList
+          decisions={currentDecisions}
+          onDecisionClicked={(decision: any, index: number) =>
+            goToNext(decision, index)
+          }
+        />
+      </div>
     </div>
   );
 }
